@@ -1,0 +1,18 @@
+.menuItem {
+  display: inline-block;
+}
+
+.colorState {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  .menuItem,
+  .colorState {
+    display: block;
+  }
+}

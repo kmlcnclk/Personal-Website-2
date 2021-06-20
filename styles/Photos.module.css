@@ -1,0 +1,107 @@
+.mainDiv {
+  margin: 3rem;
+}
+
+.ImageDiv {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.photosText {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .mainDiv {
+    margin: 1rem;
+  }
+  .ImageDiv {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+  .img {
+    width: 100%;
+  }
+  .photosText {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainDiv {
+    margin: 1rem;
+  }
+  .ImageDiv {
+    margin-top: 0rem;
+    padding: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .photosText {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainDiv {
+    margin: 1rem;
+  }
+  .ImageDiv {
+    margin-top: 0rem;
+    padding: 1rem;
+
+    margin-bottom: 0rem;
+  }
+  .photosText {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainDiv {
+    margin: 1rem;
+  }
+  .ImageDiv {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+  }
+  .photosText {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainDiv {
+    margin: 1rem;
+  }
+  .ImageDiv {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .photosText {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}

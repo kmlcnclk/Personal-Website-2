@@ -1,0 +1,35 @@
+.educationName,
+.educationText {
+  padding: 0.2rem;
+}
+
+.educationName {
+  font-size: 1.1rem;
+  font-weight: 650;
+  padding-bottom: 0.1rem;
+}
+
+.educationText {
+  /* color: #52525b; */
+  font-weight: 500;
+  padding-top: 0.1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .educationName {
+    font-size: 1rem;
+  }
+
+  .educationText {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .educationName {
+    font-size: 0.9rem;
+  }
+
+  .educationText {
+    font-size: 0.8rem;
+  }
+}

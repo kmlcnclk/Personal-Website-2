@@ -1,0 +1,94 @@
+.created {
+  color: #52525b;
+}
+
+.week {
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: #52525b;
+  padding: 0.5rem;
+  font-family: monospace;
+}
+
+.img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.rainDiv {
+  display: inline-block;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+
+.width {
+  width: auto;
+}
+
+@media screen and (max-width: 639px) {
+  .week {
+    text-align: center;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .width {
+    width: auto;
+  }
+  .mainData {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .rainDiv {
+    display: block;
+    margin: 1rem;
+    width: auto;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .week {
+    text-align: center;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .width {
+    width: auto;
+  }
+  .mainData {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .rainDiv {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .week {
+    text-align: center;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .width {
+    width: auto;
+  }
+  .mainData {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .rainDiv {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
