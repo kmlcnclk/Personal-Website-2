@@ -3,10 +3,8 @@ import { SimpleGrid } from '@chakra-ui/layout';
 import { Flex } from '@chakra-ui/layout';
 import Head from 'next/head';
 import { Image } from '@chakra-ui/react';
-// import Image from 'next/image';
 import Layout from '../Components/Layout';
 import Photo from '../Components/Photo';
-import styles from '../styles/Home.module.css';
 import { getTable } from '../airtable';
 import Education from '../Components/Education';
 import Notes from '../Components/Notes';
@@ -15,7 +13,6 @@ import { getBookmarks } from '../raindrop';
 import Bookmarks from '../Components/Bookmarks';
 import { format, parseISO } from 'date-fns';
 import { enGB } from 'date-fns/locale';
-import Contact from '../Components/Contact';
 import MrSteelCan from '../Components/MrSteelCan';
 import Footer from '../Components/Footer';
 import Social from '../Components/Social';
@@ -51,7 +48,7 @@ export default function Home({
         />
         <meta name="twitter:title" content="Cristiano Ronaldo" />
         <meta name="twitter:description" content="Cristiano Ronaldo" />
-          <link rel="icon" href="/a.png" />
+        <link rel="icon" href="/a.png" />
       </Head>
       <Flex justify="space-between">
         <SimpleGrid w="100%" columns={{ lg: 2, md: 2 }} pt={4}>
@@ -61,6 +58,7 @@ export default function Home({
               height={'auto'}
               src="/a.png"
               objectFit="contain"
+              alt="Cristiano Ronaldo"
             />
           </Flex>
 
@@ -79,16 +77,6 @@ export default function Home({
                 fontWeight="semibold"
                 bgClip="text"
               >
-                {/* Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
-                metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir
-                hurufat numune kitabı oluşturmak üzere bir yazı galerisini
-                alarak karıştırdığı 1500'lerden beri endüstri standardı sahte
-                metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını
-                sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik
-                dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da
-                içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda
-                Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü
-                yayıncılık yazılımları ile popüler olmuştur. */}
                 Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese
                 pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a
                 Portuguese professional footballer who plays as a forward for
@@ -108,7 +96,7 @@ export default function Home({
                 score 100 international goals and the first European male to
                 achieve the feat.
               </Text>
-              {/* <Contact /> */}
+
               <Flex justify="center" align="center">
                 <Flex
                   justify="center"
@@ -119,7 +107,7 @@ export default function Home({
                   rounded="14"
                 >
                   <Social />
-                </Flex>{' '}
+                </Flex>
               </Flex>
             </Flex>
           </Flex>

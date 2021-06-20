@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Photos.module.css';
+import { Image } from '@chakra-ui/image';
 
 function PhotosComponent({ data }) {
   return (
@@ -9,14 +10,10 @@ function PhotosComponent({ data }) {
           if (index % 3 == 0) {
             return (
               <div className={styles.ImageDiv} key={photo.Id}>
-                <img
+                <Image
                   className={styles.img}
-                  // width={photo.Attachments[0].thumbnails.large.width}
-                  // width={'auto'}
-                  // height={photo.Attachments[0].thumbnails.large.height}
-                  // height={"auto"}
                   src={photo.Attachments[0].thumbnails.large.url}
-                  // objectFit="contain"
+                  alt={`${photo.Name}`}
                 />
               </div>
             );
@@ -28,12 +25,10 @@ function PhotosComponent({ data }) {
           if (index % 3 == 1) {
             return (
               <div className={styles.ImageDiv} key={photo.Id}>
-                <img
+                <Image
                   className={styles.img}
-                  // width={photo.Attachments[0].thumbnails.large.width}
-                  // height={photo.Attachments[0].thumbnails.large.height}
                   src={photo.Attachments[0].thumbnails.large.url}
-                  // objectFit="contain"
+                  alt={`${photo.Name}`}
                 />
               </div>
             );
@@ -45,12 +40,10 @@ function PhotosComponent({ data }) {
           if (index % 3 == 2) {
             return (
               <div className={styles.ImageDiv} key={photo.Id}>
-                <img
-                  // width={photo.Attachments[0].thumbnails.large.width}
+                <Image
                   className={styles.img}
-                  // height={photo.Attachments[0].thumbnails.large.height}
                   src={photo.Attachments[0].thumbnails.large.url}
-                  // objectFit="contain"
+                  alt={`${photo.Name}`}
                 />
               </div>
             );

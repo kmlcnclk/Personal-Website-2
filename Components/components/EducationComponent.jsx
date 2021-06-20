@@ -3,7 +3,7 @@ import styles from '../../styles/Photos.module.css';
 import styles1 from '../../styles/Education.module.css';
 import { Box } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
-import { Heading } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
 
 function EducationComponent({ data }) {
   return (
@@ -15,9 +15,10 @@ function EducationComponent({ data }) {
               return (
                 <div className={styles.ImageDiv} key={photo.Id}>
                   <div className="text-center">
-                    <img
+                    <Image
                       className={styles.img}
                       src={photo.Attachments[0].thumbnails.large.url}
+                      alt={`${photo.Name}`}
                     />
                   </div>
 
@@ -50,9 +51,10 @@ function EducationComponent({ data }) {
               return (
                 <div className={styles.ImageDiv} key={photo.Id}>
                   <div className="text-center">
-                    <img
+                    <Image
                       className={styles.img}
                       src={photo.Attachments[0].thumbnails.large.url}
+                      alt={`${photo.Name}`}
                     />
                   </div>
 

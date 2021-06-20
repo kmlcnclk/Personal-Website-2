@@ -24,12 +24,14 @@ function Notes({ data }) {
         w="100%"
       >
         <Container maxW="container.sm" w="100%">
-          <Heading m={2}>Kendime notlar</Heading>
-          <Text color="gray.500" p={2}>
-            bu sayfa henüz beta aşamasında. medium'da yayınladığım yazıları en
-            kısa sürede buraya taşıyacağım inş{' :)'}
-          </Text>
-          <NotesComponent data={data} />
+          <div className={styles.photosText}>
+            <Heading m={2}>Kendime notlar</Heading>
+            <Text color="gray.500" p={2}>
+              bu sayfa henüz beta aşamasında. medium&apos;da yayınladığım
+              yazıları en kısa sürede buraya taşıyacağım inş{' :)'}
+            </Text>{' '}
+            <NotesComponent data={data} />
+          </div>
         </Container>
       </Box>
     </Flex>

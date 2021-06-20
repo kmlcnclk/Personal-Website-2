@@ -26,40 +26,42 @@ function Bookmarks({ data, dates }) {
         w="100%"
       >
         <Container maxW="container.sm">
-          <Text fontSize="lg" fontWeight="semibold" textAlign="center">
-            İnternette gezinirken beğendiğim ve beni takip edenlerin de
-            beğeneceğini düşündüğüm, belli bir kategorisi olmayan karışık
-            şeyler.
-          </Text>
-          {dates[0] ? (
-            <Box mt="14">
-              {dates.map((date, index) => (
-                <div key={index}>
-                  <Heading
-                    m={4}
-                    size="md"
-                    bgGradient={['linear(to-b, white, gray.300)']}
-                    bgClip="text"
-                  >
-                    {date.week}. Week, {date.year}
-                  </Heading>
-                  <div className={`text-center ${styles1.mainData}`}>
-                    {data.map((rain) => {
-                      if (
-                        format(parseISO(rain.created), 'w', {
-                          locale: enGB,
-                        }) == date.week
-                      ) {
-                        return (
-                          <BookmarksComponent key={rain._id} rain={rain} />
-                        );
-                      }
-                    })}
+          <div className={styles.photosText}>
+            <Text fontSize="lg" fontWeight="semibold" textAlign="center">
+              İnternette gezinirken beğendiğim ve beni takip edenlerin de
+              beğeneceğini düşündüğüm, belli bir kategorisi olmayan karışık
+              şeyler.
+            </Text>
+            {dates[0] ? (
+              <Box mt="14">
+                {dates.map((date, index) => (
+                  <div key={index}>
+                    <Heading
+                      m={4}
+                      size="md"
+                      bgGradient={['linear(to-b, white, gray.300)']}
+                      bgClip="text"
+                    >
+                      {date.week}. Week, {date.year}
+                    </Heading>
+                    <div className={`text-center ${styles1.mainData}`}>
+                      {data.map((rain) => {
+                        if (
+                          format(parseISO(rain.created), 'w', {
+                            locale: enGB,
+                          }) == date.week
+                        ) {
+                          return (
+                            <BookmarksComponent key={rain._id} rain={rain} />
+                          );
+                        }
+                      })}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </Box>
-          ) : null}
+                ))}
+              </Box>
+            ) : null}
+          </div>
         </Container>
       </Box>
     </Flex>

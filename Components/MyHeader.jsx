@@ -84,7 +84,7 @@ function MyHeader() {
 
           <Flex justify="center" align="center">
             {HeadList.map((listItem, i) => (
-              <Link key={i} href={listItem.link}>
+              <Link key={i} href={listItem.link} passHref>
                 <Text
                   bgGradient={['linear(to-b, white, gray.300)']}
                   fontWeight="bold"
@@ -142,9 +142,9 @@ function MyHeader() {
                           onClose();
                         }, 1000);
                       }}
+                      key={i}
                     >
-                      {' '}
-                      <Link key={i} href={listItem.link}>
+                      <Link href={listItem.link} passHref>
                         <Text
                           // bgGradient={[menuColor]}
                           color={menuColor}
@@ -171,7 +171,7 @@ function MyHeader() {
                       }, 1000);
                     }}
                   >
-                    <Link href="#contact">
+                    <Link href="#contact" passHref>
                       <Text
                         color={menuColor}
                         fontWeight="bold"

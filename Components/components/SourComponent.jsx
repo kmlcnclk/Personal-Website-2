@@ -5,6 +5,7 @@ import { Flex } from '@chakra-ui/layout';
 import { Heading } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
 
 function SourComponent({ sour, desk }) {
   return (
@@ -17,9 +18,10 @@ function SourComponent({ sour, desk }) {
               className="text-center"
               style={{ marginLeft: '1rem', marginRight: '1rem' }}
             >
-              <img
+              <Image
                 src={d.Attachments[0].thumbnails.full.url}
                 style={{ objectFit: 'contain', width: '100%' }}
+                alt={`${d.Name}`}
               />
             </div>
           ))}
@@ -31,9 +33,10 @@ function SourComponent({ sour, desk }) {
                 return (
                   <div className={styles.ImageDiv} key={photo.Id}>
                     <div className="text-center">
-                      <img
+                      <Image
                         className={styles.img}
                         src={photo.Attachments[0].thumbnails.large.url}
+                        alt={`${photo.Name}`}
                       />
                     </div>
 
@@ -65,9 +68,10 @@ function SourComponent({ sour, desk }) {
                 return (
                   <div className={styles.ImageDiv} key={photo.Id}>
                     <div className="text-center">
-                      <img
+                      <Image
                         className={styles.img}
                         src={photo.Attachments[0].thumbnails.large.url}
+                        alt={`${photo.Name}`}
                       />
                     </div>
 

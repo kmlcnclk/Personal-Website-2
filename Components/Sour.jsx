@@ -22,10 +22,17 @@ function Sour({ sour, desk }) {
         w="100%"
       >
         <Container maxW="container.sm" w="100%">
-          <Text textAlign="center" fontSize="lg" fontWeight="semibold" mb={14}>
-            İşlerimi yaparken ve günlük hayatta sık kullandığım araçların
-            listesi.
-          </Text>
+          <div className={styles.photosText}>
+            <Text
+              textAlign="center"
+              fontSize="lg"
+              fontWeight="semibold"
+              mb={14}
+            >
+              İşlerimi yaparken ve günlük hayatta sık kullandığım araçların
+              listesi.
+            </Text>
+          </div>
         </Container>
         <SourComponent sour={sour} desk={desk} />
       </Box>
