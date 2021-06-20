@@ -78,7 +78,7 @@ export default function Home({
                 fontWeight="semibold"
                 bgClip="text"
               >
-                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
+                {/* Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
                 metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir
                 hurufat numune kitabı oluşturmak üzere bir yazı galerisini
                 alarak karıştırdığı 1500'lerden beri endüstri standardı sahte
@@ -87,7 +87,25 @@ export default function Home({
                 dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da
                 içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda
                 Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü
-                yayıncılık yazılımları ile popüler olmuştur.
+                yayıncılık yazılımları ile popüler olmuştur. */}
+                Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese
+                pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a
+                Portuguese professional footballer who plays as a forward for
+                Serie A club Juventus and captains the Portugal national team.
+                Often considered the best player in the world and widely
+                regarded as one of the greatest players of all time, Ronaldo has
+                won five Ballon d&apos;Or awards[note 3] and four European
+                Golden Shoes, both of which are records for a European player.
+                He has won 32 major trophies in his career, including seven
+                league titles, five UEFA Champions Leagues, one UEFA European
+                Championship, and one UEFA Nations League title. Ronaldo holds
+                the records for the most goals (134) in the Champions League and
+                the most goals (12) in the European Championship. He is one of
+                the few recorded players to have made over 1,100 professional
+                career appearances and has scored over 790 official senior
+                career goals for club and country. He is also the second male to
+                score 100 international goals and the first European male to
+                achieve the feat.
               </Text>
               {/* <Contact /> */}
               <Flex justify="center" align="center">
