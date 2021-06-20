@@ -51,6 +51,7 @@ export default function Home({
         />
         <meta name="twitter:title" content="Cristiano Ronaldo" />
         <meta name="twitter:description" content="Cristiano Ronaldo" />
+          <link rel="icon" href="/a.png" />
       </Head>
       <Flex justify="space-between">
         <SimpleGrid w="100%" columns={{ lg: 2, md: 2 }} pt={4}>
