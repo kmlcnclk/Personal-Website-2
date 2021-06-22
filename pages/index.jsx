@@ -37,14 +37,17 @@ export default function Home({
           content="Cristiano, Ronaldo, Cristiano Ronaldo, Cr7, cr7"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content="https://cristianoronaldo.vercel.app" />
+        <meta
+          property="og:url"
+          content="https://cristiano-ronaldo.vercel.app"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cristiano Ronaldo" />
         <meta property="og:description" content="Cristiano Ronaldo" />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:url"
-          content="https://cristianoronaldo.vercel.app"
+          content="https://cristiano-ronaldo.vercel.app"
         />
         <meta name="twitter:title" content="Cristiano Ronaldo" />
         <meta name="twitter:description" content="Cristiano Ronaldo" />
