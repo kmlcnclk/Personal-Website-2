@@ -26,7 +26,7 @@ function Notes({ data }) {
         <Container maxW="container.sm" w="100%">
           <div className={styles.photosText}>
             <Heading m={2}>Kendime notlar</Heading>
-            <Text color="gray.500" p={2}>
+            <Text color="gray.500" p={2} textAlign="justify">
               bu sayfa henüz beta aşamasında. medium&apos;da yayınladığım
               yazıları en kısa sürede buraya taşıyacağım inş{' :)'}
             </Text>{' '}

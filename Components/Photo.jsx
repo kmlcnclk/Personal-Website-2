@@ -21,11 +21,11 @@ function Photo({ data }) {
       >
         <div>
           <Container maxW="container.sm">
-            <div className={styles.photosText}>
+            <Box as="div" className={styles.photosText} textAlign="justify">
               Fotoğraf çekmek etrafımdaki şeyleri daha iyi görmemi sağlıyor.
               Çevrem hakkında farkındalığı, detayları görebilmemi ve doğru anı
               yakalabilmeyi öğretiyor.
-            </div>
+            </Box>
           </Container>
           <PhotosComponent data={data} />
         </div>

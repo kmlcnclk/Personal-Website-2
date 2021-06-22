@@ -27,7 +27,7 @@ function Bookmarks({ data, dates }) {
       >
         <Container maxW="container.sm">
           <div className={styles.photosText}>
-            <Text fontSize="lg" fontWeight="semibold" textAlign="center">
+            <Text fontSize="lg" fontWeight="semibold" textAlign="justify">
               İnternette gezinirken beğendiğim ve beni takip edenlerin de
               beğeneceğini düşündüğüm, belli bir kategorisi olmayan karışık
               şeyler.

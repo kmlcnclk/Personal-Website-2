@@ -76,6 +76,7 @@ export default function Home({
                 bgGradient={['linear(to-b, white, gray.300)']}
                 fontWeight="semibold"
                 bgClip="text"
+                textAlign="justify"
               >
                 Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese
                 pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a

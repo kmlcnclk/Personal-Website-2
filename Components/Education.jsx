@@ -25,6 +25,7 @@ function Education({ data }) {
             bgGradient={['linear(to-b, white, gray.300)']}
             bgClip="text"
             className={styles.photosText}
+            textAlign="justify"
           >
             Yazılım, Tasarım ve Tecrübelerimi paylaştığım videoların listesi. Bu
             listedeki bütün videoları ücretsiz olarak izleyebilirsiniz.
