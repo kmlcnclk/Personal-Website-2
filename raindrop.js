@@ -9,7 +9,7 @@ export async function getBookmarks() {
   const res = await fetch(url, {
     method: 'GET',
     headers: new Headers({
-      Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_RAINDROP_ACCESS_TOKEN}`,
     }),
   });
   return res.json();
