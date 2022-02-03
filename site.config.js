@@ -1,6 +1,6 @@
 module.exports = {
   author: {
-    email: 'kamilcancelik5757@gmail.com',
+    email: 'mr.steelcan@gmail.com',
     name: 'Kamilcan Çelik',
     emails: 'https://www.instagram.com/mr.steelcan/',
   },
