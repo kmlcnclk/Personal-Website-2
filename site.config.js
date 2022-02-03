@@ -11,6 +11,5 @@ module.exports = {
     medium: 'https://medium.com/',
     github: 'https://github.com/KamilcanCelik',
     youtube: 'https://youtube.com/',
-    feyz: 'https://t.me/feyzli',
   },
 };
